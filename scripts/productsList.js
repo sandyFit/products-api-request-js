@@ -53,4 +53,13 @@ axios
 		console.error(`Error feetching data ${err.message}`);
 	});
 
+const changeTheme = () => {
+	const body = document.querySelector('body');
+	body.classList.toggle('dark');
+}
+
+const themeBtn = document.querySelector("#theme-btn");
+
+themeBtn.addEventListener('click', changeTheme);
+
 

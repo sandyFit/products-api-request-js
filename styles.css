@@ -20,6 +20,12 @@ main {
 
 }
 
+/*========================THEME===========================*/
+.dark {
+    background: #1a1919;
+    color: #fff;
+}
+
 /*=======================NAVBAR=========================*/
 
 .nav-box {
@@ -27,7 +33,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    background-color: rgb(235, 220, 249);
+    background-color: blueviolet;
 }
 
 .nav-box ul {
@@ -41,7 +47,7 @@ main {
 }
 
 .nav-box li a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 
 }
