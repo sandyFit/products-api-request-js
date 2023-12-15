@@ -191,3 +191,23 @@ h1 {
     text-align: center;
 
 }
+
+.best-rated-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.rated-box-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    gap: 3rem;
+
+}
