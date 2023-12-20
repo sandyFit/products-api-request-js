@@ -32,6 +32,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 7rem;
     padding: 1rem 0;
     background-color: blueviolet;
 }
@@ -40,6 +41,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: 70%;
+    padding-top: 1rem;
 }
 
 .nav-box li {
@@ -53,19 +55,34 @@ main {
 }
 
 .nav-btn {
-    width: 3rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-color: blueviolet;
-    font-size: 2rem;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
     text-align: center;
     margin-left: 2rem;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: rgb(167, 79, 249);
 }
 
 .fa-sun {
+    color: #fff;
+}
+
+.count {
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 0.3rem .5rem;
+    color: #fff;
+    font-size: .8rem;
     position: relative;
-    right: 1rem;
-    bottom: 1rem;
+    bottom: .4rem;
+    left: 3.4rem;
 }
 
 hr {
@@ -105,7 +122,7 @@ img {
 }
 
 
-button {
+.btn {
     width: 12rem;
     padding: 1.2em 2rem;
     background-color: transparent;
@@ -114,6 +131,11 @@ button {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+
 }
 
 /* =======================DETAIL===========================*/

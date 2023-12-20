@@ -25,7 +25,10 @@
             <li><a href="/">LoGo</a></li>
             <li><a href="/bestRated.html">Best Rated Products</a></li>
             <li><a href="/filterProducts.html">Search Products</a></li>
+            <li><a href="/shoppingCart.html">Cart <i class="fa-solid fa-cart-shopping"></i></a></li>
+            <span class="count">0</span>
         </ul>
+
         <button id="theme-btn" class="nav-btn"><i class="fa-solid fa-sun"></i></button>
     </nav>
     <hr>
@@ -38,7 +41,11 @@
 
                 <form>
                     <div class="col-12 mb-3">
-                        <input type="text" class="form-control" id="searchInput" placeholder="Search by Category">
+                        <input name="filter-input" id="inputSearch" placeholder="Search by Category or Name">
+                        <select name="filter-search" id="searchFilter">
+                            <option value="price">Price</option>
+                            <option value="best-rated">Best Rated</option>
+                        </select>
                     </div>
                 </form>
             </div>
