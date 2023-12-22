@@ -62,7 +62,7 @@ main {
     border: 2px solid #fff;
     font-size: 1.2rem;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 4rem;
     cursor: pointer;
 }
 
@@ -91,7 +91,7 @@ hr {
 
 /*========================HOME=========================*/
 
-.container {
+.home-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -206,7 +206,7 @@ h1 {
     border: 2px solid #000;
 }
 
-/*=======================FORM========================*/
+/*=======================BEST RATED========================*/
 
 .form-box {
     width: 40%;
@@ -214,22 +214,3 @@ h1 {
 
 }
 
-.best-rated-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    gap: 1rem;
-}
-
-.rated-box-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
-    gap: 3rem;
-
-}

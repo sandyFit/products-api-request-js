@@ -30,7 +30,7 @@ axios
 		console.log(`Total Products: ${totalProducts}`);
 
 		// Select the container
-		const container = document.querySelector(".container");
+		const container = document.querySelector(".home-container");
 
 		// Loop through products and append them to the container
 		products.forEach(product => {
