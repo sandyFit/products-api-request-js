@@ -49,23 +49,28 @@ document.addEventListener("DOMContentLoaded", function () {
 		addToCartBtn.addEventListener("click", () => addToCart(id));
 		
 		// Add to Cart Fn
+		// Add to Cart Fn
 		const addToCart = (productId) => {
+			// Retrieve cart from localStorage
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 			const product = cart.find((item) => item.id === productId);
 
 			if (product) {
 				// Product already in the cart, you can update quantity or show a message
 				alert('Product is already in the cart');
-			} else {
+			}
+			else {
 				// Add the product to the cart
 				cart.push({
-					id: productId,
-					name: response.data.title,
-					description: response.data.description,
-					category: response.data.category,
-					price: response.data.price
+				id: productId,
+				name: response.data.title,
+				description: response.data.description,
+				category: response.data.category,
+				price: response.data.price
 				});
 
-				// Save the updated cart to localStorage
+				// Update the cart in localStorage
 				localStorage.setItem('cart', JSON.stringify(cart));
 
 				// Update the cart count in the navigation
@@ -74,7 +79,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		};
 
-
-		
 	});
 });

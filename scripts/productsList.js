@@ -15,10 +15,15 @@ Process:
 
 const apiUrl = "https://dummyjson.com/products";
 
+
 function viewMore(productId) {
-	// Redirige a detail.html con el ID del producto como parámetro de consulta
+	// Check if cart exists in localStorage
+	let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+	// Redirect to detail.html with the ID as a query parameter
 	window.location.href = `detail.html?id=${productId}`;
 }
+
 
 axios
 	.get(apiUrl)
@@ -62,4 +67,7 @@ const themeBtn = document.querySelector("#theme-btn");
 
 themeBtn.addEventListener('click', changeTheme);
 
+// Update cart count in navigation
+const cartCountElement = document.querySelector(".count");
+cartCountElement.textContent = cartCount;
 
