@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				// Product already in the cart, you can update quantity or show a message
 				alert('Product is already in the cart');
 			}
-			else {
+			else
+{
 				// Add the product to the cart
 				cart.push({
 				id: productId,

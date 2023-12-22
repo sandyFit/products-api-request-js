@@ -1,3 +1,4 @@
+// cart.js
 let cart;
 try {
     cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -7,7 +8,7 @@ try {
 }
 
 const cartCountElement = document.querySelector(".count");
-const tableBody = document.querySelector("#tbody"); // Assuming tableBody is defined elsewhere
+const tableBody = document.querySelector("#tbody"); 
 
 // Function to delete a product from the cart
 const deleteProduct = (productId) => {
